@@ -1,0 +1,302 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>clavardage</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    </head>
+    
+    <style> 
+    #dv1{
+        border-bottom: 2px black;
+        height:30px;
+    }
+    #im1{
+        margin-top:30px;
+        float:left;
+        margin-left: 20px;
+        height:50px;
+    }
+    #im1:hover{
+        opacity: 0.5;
+    }
+    #dv1 p{
+        margin-top:30px;
+        float:left;
+        margin-left: 850px;
+    }
+    #im2{
+        height:55px;
+        margin-top: -300px;
+        margin-left: 1440px;
+    }
+    #im2:hover{
+        opacity: 0.5;
+    }
+    #green{
+        height: 140px;
+        margin-top: 10px;
+        width: 100%;
+    }
+    #hP{
+        color:#b5522d;
+        margin-left:260px;    }
+    hr{
+        color:grey;
+        width:1000px;
+    }
+    #docs{
+        height:300px;
+    }
+    #docs p{
+        height:220px;
+        width:250px;
+        border-radius:20px;
+        border: 3px black solid;
+        margin-top:25px;
+        float:left;
+        margin-left:260px;
+        
+    }
+    #docs b{
+        color:#b5522d;
+    }
+ 
+    #sp1{margin-top:20px;
+        color:black;
+        margin-left:85px;
+        font-size:40px;
+        color:grey;
+        float:right;
+    }
+    #sp1:hover{
+        color:#b5522d;
+    }
+    #sp2{
+        margin-top:20px;
+        color:black;
+        font-size:40px;
+        margin-left:130px;
+        color:grey;
+        float:left;
+    }
+    #sp2:hover{
+        color:#b5522d;
+    }
+    button{
+        border:0px;
+        border-color:white;
+        width:80px;
+        background-color:white;
+    }
+    #mes{
+        margin-top:20px;
+        color:black;
+        margin-left:85px;
+        font-size:40px;
+        float:left;
+        color:grey;
+        margin-left:20px;
+    }
+    #sN{
+        font-size:25px;
+        color:green;
+    }
+    #sY{
+        margin-left:15px;
+        font-size:25px;
+        color:red;
+    }
+    #sY:hover{
+        color:grey;
+    }    
+    #mes:hover{
+        color:#b5522d;
+    }
+    #pdes{
+        margin-left:250px;
+        font-size:25px;
+    }
+    #pdes input{
+        border-color:#b5522d;
+        border-radius:15px;
+        width:300px;
+        margin-left:30px;
+    }
+    #pde{
+        margin-left:250px;
+        font-size:25px;
+    }
+    #pdes span{
+        color:#b5522d;
+        margin-right:60px;
+    }
+    #pde input{
+        border-color:#b5522d;
+        border-radius:15px;
+        width:650px;
+        margin-left:225px;
+    }
+    #pde span{
+        color:#b5522d;
+        margin-right:60px;
+    }
+    #mesa{
+        margin-left:250px;
+        font-size:25px;
+    }
+    #mesa span{
+        color:#b5522d;
+        margin-right:60px;
+    }
+    #mesa textarea{
+        height:350px;
+        border-color:#b5522d;
+        border-radius:15px;
+        width:850px;
+        margin-left:225px;
+    }
+    #mesa span{
+        color:#b5522d;
+        margin-right:60px;
+    }
+    #sen{
+        font-size:30px;
+        margin-left:1200px;
+        color:#b5522d;
+    }
+    #mess{
+        font-size:20px;
+        margin-left:250px;
+
+    }
+    #mess span{
+        color:#0381d6;
+
+    }
+    #mess b{
+        margin-left:30px;
+    }
+    #mesg{
+        color:grey;
+        font-size:18px;
+        margin-left:400px;
+    }
+
+    #mess u {
+        margin-left:150px;
+    }
+    #dvClav{
+        width:500px;
+        margin-left: 300px;
+    }
+    #qst{
+       font-weight: bold;
+        color:white;
+        background-color: #b5522d;
+        font-size: 20px;
+        border-radius: 25px;
+        border-color:#b5522d; ;
+        border-style: solid;
+    }
+    #rep{
+        font-size: 20px;
+        border-style: solid;
+        float: right;
+        border-radius: 25px;
+        border-color:#b5522d; ;
+        color:#b5522d; ;
+
+    }
+    </style>
+    <body>
+        <div id="dv1"><img id="im1" src="img/omnitech2.JPG">        <p><?php echo  $_SESSION["prenom"].' '.  $_SESSION["nom"]?> <br><b> <?php echo $_SESSION["formation"]  ?></b> <br></br>
+    </p> 
+    <form method="POST" action="acceuil.php">  
+    <button type="submit" name="message">  <span  id="mes"class="glyphicon glyphicon-envelope"></span></button>
+      <span id="sp2" class="glyphicon glyphicon-cog"></span><button type="submit" name="quitter">      <span  id="sp1" class="glyphicon glyphicon-off"></span></button>  </form>  </div>
+        <img id="green" src="img/green.JPG">
+        <h1 id="hP">  <span class="glyphicon glyphicon-comment"></span> Assistance virtuel</h1> 
+            <hr >
+            <div id="dvClav">
+                <span class="glyphicon glyphicon-comment"></span> <p id="qst">  Bonjour, je suis l'assistant virtuel Omnitech</p>
+                <p id="qst"> Vous pouvez poser une question ou choisir un sujet ci-dessous:</p>
+                <p id="qc1"><input type="checkbox"><span class="glyphicon glyphicon-usd"></span> Facturation </input></p>
+                <p id="qc2"><input type="checkbox"> <span class="glyphicon glyphicon-alert"></span>Soutien technique </input> </p>
+                <p id="rep"></p>
+                               
+
+            </div>
+
+    </body>
+    <script>
+        document.getElementById("qc1").onclick = function() {myFunction()};
+        let newP1 = document.createElement('p');
+        let newP2 = document.createElement('p');
+        let newP3 = document.createElement('p');
+       
+        let supp = document.createElement('p');
+
+        let newPS1 = document.createElement('p');
+        let newPS2 = document.createElement('p');
+        let newPS3 = document.createElement('p');
+
+        let br = document.createElement('br');
+        
+
+
+        newP1.id="qst";
+        newP2.id="qst";
+        newP3.id="qst";
+
+        newPS1.id= "qst";
+        newPS2.id= "qst";
+        newPS3.id= "qst";
+        
+        
+        let b =document.body;
+        d1 = document.getElementById("dvClav");
+        function myFunction() {
+            
+            document.getElementById("rep").innerHTML += "Facturation";
+            newP1.textContent = 'Vous avez un problème de paiement ?';
+            newP2.textContent = 'Vous voulez des details sur votre facturation ?';
+            newP3.textContent = 'Vous voulez payer maintenant ?';
+            
+            d1.insertAdjacentElement('beforeend',newP1);
+            newP1.insertAdjacentElement('afterend',newP2);
+            newP2.insertAdjacentElement('afterend',newP3);
+            newP1.onclick= function(){
+                newPS1.textContent = 'Diriger vers la page de paiement';
+                newPS2.textContent = 'Prendre un rendez-vous à fin de payer cash';
+                newPS3.textContent = 'autre'
+                
+                supp.textContent = 'Parler avec nous sur le 514-229-6590';
+                newP3.insertAdjacentElement('afterend',br);
+                br.insertAdjacentElement('afterend',br);
+
+                br.insertAdjacentElement('afterend',newPS1);
+                newPS1.insertAdjacentElement('afterend',newPS2);
+                newPS2.insertAdjacentElement('afterend',newPS3);
+                
+                newPS1.onclick = function(){
+                    window.location.replace("");
+                }
+                newPS2.onclick = function(){
+                   newPS3.insertAdjacentElement('afterend',supp);
+                }
+                newPS3.onclick = function(){
+                   newPS3.insertAdjacentElement('afterend',supp);
+                }
+            }
+        }
+
+        </script>
+
